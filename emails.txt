@@ -73,7 +73,6 @@ andreas.frisch@ltnglobal.com
 andreas@antonopoulos.com
 andres@tonejito.org
 andresitorresm@gmail.com
-andrew.shadura@collabora.co.uk
 andrew.thorp@inmar.com
 andrew@schwartzmeyer.com
 andrew@shadura.me
@@ -924,7 +923,6 @@ prasriva@redhat.com
 prof.lam@gmail.com
 programmer@travi.org
 pyu@riseup.net
-qhong@mit.edu
 r95g10@gmail.com
 rachelkg@gmail.com
 rachellawson@me.com
@@ -1104,7 +1102,6 @@ tonetheman@gmail.com
 tracyhinds@gmail.com
 transcaffeine@finallycoffee.eu
 travis.vachon@gmail.com
-travisrobertbrown@gmail.com
 trembleafterme@outlook.com
 trevor.j.manz@gmail.com
 trevor.mcnaughton@gmail.com
