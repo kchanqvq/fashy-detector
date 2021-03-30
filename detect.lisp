@@ -35,7 +35,8 @@
                                      (cd ,fashy-repo-path)
                                      (git log "--format=%s")))))
 (print-progress "Manual input"
-  (manual-fashy "travisbrown" "travisrobertbrown@gmail.com"))
+  (manual-fashy "travisbrown" "travisrobertbrown@gmail.com")
+  (manual-fashy "andrewshadura" "andrew.shadura@collabora.co.uk"))
 (defun write-hash-table (hash-table file)
   (with-open-file (output file :direction :output
                                :if-exists :supersede
