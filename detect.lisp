@@ -1,4 +1,5 @@
 (ql:quickload "inferior-shell")
+(ql:quickload "cl-json")
 (defvar fashy-github-usernames (make-hash-table :test 'equal))
 (defvar fashy-emails (make-hash-table :test 'equal))
 (defvar fashy-repo-path "../../playground/rms-open-letter.github.io/")
@@ -35,8 +36,15 @@
                                      (cd ,fashy-repo-path)
                                      (git log "--format=%s")))))
 (print-progress "Manual input"
-  (manual-fashy "travisbrown" "travisrobertbrown@gmail.com")
-  (manual-fashy "andrewshadura" "andrew.shadura@collabora.co.uk"))
+  (manual-fashy "travisbrown" "travisrobertbrown@gmail.com"))
+(print-progress "GitHub API"
+  (loop for i from 0
+        for fetch = (cl-json:decode-json-from-string
+                     (inferior-shell:run/s `(curl ,(format nil "https://api.github.com/repos/rms-open-letter/rms-open-letter.github.io/contributors?per_page=100&page=~s" i))))
+        while fetch
+        do (mapc (lambda (item)
+                   (setf (gethash (cdr (assoc :login item)) fashy-github-usernames) t))
+                 fetch)))
 (defun write-hash-table (hash-table file)
   (with-open-file (output file :direction :output
                                :if-exists :supersede
@@ -45,5 +53,5 @@
       (maphash (lambda (k v) (when v (push k list))) hash-table)
       (setq list (sort list #'string<=))
       (mapc (lambda (item) (write-line item output)) list))))
-(write-hash-table fashy-github-usernames "github-users.txt")
-(write-hash-table fashy-emails "emails.txt")
+(write-hash-table fashy-github-usernames "~/Projects/fashy-detector/github-users.txt")
+(write-hash-table fashy-emails "~/Projects/fashy-detector/emails.txt")

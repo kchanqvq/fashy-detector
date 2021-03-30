@@ -10,6 +10,7 @@
 7h3730B
 AKurushimi
 AbigailBrady
+AbigailFiligree
 Admicos
 AgathaSorceress
 AlexsJones
@@ -19,6 +20,7 @@ Andy-Aranda
 AniMerrill
 Artoria2e5
 Ashley-Norris
+AtomicNicos
 Be-ing
 BenSandeen
 BertRaeymaekers
@@ -43,6 +45,7 @@ ChrisLGardner
 ChristopherMacGown
 CobyPear
 Corvan
+DEGoodmanWilson
 DIzFer
 DJefke
 DMNerd
@@ -96,6 +99,7 @@ Hainish
 Half-Shot
 HankG
 HayashiEsme
+Hermitter
 HideyoshiNakazone
 HonzaKral
 IslandC0der
@@ -246,6 +250,7 @@ abh
 abrown-isp
 acant
 acinonyx
+acook
 adamhotep
 adamreichold
 adamwmeek
@@ -262,6 +267,7 @@ akosiaris
 alanc
 albertbellonch
 aldomann
+aleffert
 alexdmccabe
 alexinea
 alexpreynolds
@@ -276,6 +282,7 @@ almaceleste
 alois31
 alper
 alsaihn
+amatas
 aminone
 aminvakil
 amiremohamadi
@@ -295,12 +302,14 @@ antifuchs
 apaleslimghost
 apapsch
 aperezdc
+aphid
 apiology
 aptituz
 aramirezreyes
 arnauddupuis
 arnoFleming
 arnobroekhof
+asalkeld
 asciigirl
 aurrelhebert
 autarchprinceps
@@ -326,11 +335,13 @@ benabraham
 benatto
 benbromhead
 bendylan
+benharri
 benharri-forks
 benignbala
 benjivesterby
 benofbrown
 bentasker
+benwerd
 betaorbust
 bf
 bfgelectronics
@@ -401,6 +412,7 @@ christofhaerens
 christophehenry
 chutten
 cjschroder
+cjwatson
 ckranz
 claunia
 clee
@@ -428,6 +440,7 @@ couci
 coypoop
 cpanato
 cpeticus
+crees
 crisidev
 crt0mega
 crutchcorn
@@ -461,8 +474,11 @@ danyeaw
 dashaun
 datagrok
 datamattsson
+dave2
 davefiddes
 davelukes
+davexunit
+david-cooke
 davidjguru
 davidmalcolm
 davidribyrne
@@ -472,6 +488,7 @@ dcyang
 dds
 dduportal
 deafmute1
+debarshiray
 debrouxl
 deeheber
 defcon201
@@ -480,6 +497,7 @@ deneb-alpha
 derat
 derekeder
 derickr
+derwin-cloudwick
 derwinmcgeary
 deskin
 desrosj
@@ -522,7 +540,9 @@ dylanmccall
 dz4k
 e7e6
 each
+ebassi
 edsu
+edubxb
 egonSchiele
 ehashman
 ehmry
@@ -530,6 +550,7 @@ ejaz4
 elatelation
 elight
 eliheuer
+elioqoshi
 ell1e
 elplatt
 elroncio
@@ -551,6 +572,7 @@ esteve
 ethancodes2020
 eugengubich
 eukara
+evanextreme
 evgeni
 evilaliv3
 eviltrout
@@ -563,11 +585,13 @@ fa7ad
 fantoro
 farfromrefug
 farrokhi
+federicomenaquintero
 felipeborges
 felixfontein
 ferd
 fezie
 fiendish
+finalchild
 fintelia
 floriansegginger
 fmckeogh
@@ -623,6 +647,7 @@ gr2m
 grantseltzer
 graydon
 gregs1104
+grifferz
 griffey
 grimmy
 grobmeier
@@ -835,6 +860,7 @@ leigh123linux
 leny
 leo60228
 leonheld
+lexicalunit
 lilic
 lilyinstarlight
 lintqueen
@@ -963,6 +989,7 @@ nbudin
 nceder
 nedrichards
 neelchauhan
+neilmcgovern
 nektro
 neugens
 ngrewe
@@ -987,6 +1014,7 @@ nthykier
 ntrrgc
 nvcexploder
 nxmq
+obensource
 ocefpaf
 odrotbohm
 oerdnj
@@ -1149,6 +1177,7 @@ sethhillbrand
 sftwninja
 sgilissen
 shashankram
+shaunagm
 shemminger
 shikadiqueen
 shmish111
@@ -1229,6 +1258,7 @@ tiagofassoni
 tielqt
 timbuntin
 timcasasola
+tiran
 tlatsas
 tlattner
 todd64
@@ -1241,21 +1271,23 @@ topikettunen
 tpdcl
 travi
 travier
-travisbrown
 tretkowski
 trevormcnaughton
 trevorthalacker
 trinity-1686a
+trisk
 trystero11
 ttpcodes
 tub5ta
 tux93
 tuxcrafting
 tvandervossen
+tweedge
 tyrelsouza
 u451f
 ukmadlz
 unixbigot
+unstablereality
 ursinha
 utkuboduroglu
 uumas
