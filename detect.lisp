@@ -9,31 +9,36 @@
      (remhash "" fashy-emails)
      (format t "~a: ~s new fashy github usernames added ~%"
              ,prompt (- (hash-table-count fashy-github-usernames) old-count))))
+(defun manual-fashy (name &optional email)
+  (setf (gethash name fashy-github-usernames) t)
+  (when (setf (gethash email fashy-emails) t)))
 (print-progress "Commit author email"
-  (mapcar (lambda (email)
-            (destructuring-bind (&optional name domain) (uiop:split-string email :separator "@")
-              (if (equal domain "users.noreply.github.com")
-                  (destructuring-bind (garbage &optional user)
-                      (uiop:split-string name :separator "+")
-                    (setf (gethash (or user garbage) fashy-github-usernames) t))
-                  (setf (gethash email fashy-emails) t))))
-          (inferior-shell:run/lines `(progn
-                                       (cd ,fashy-repo-path)
-                                       (git log "--format=%ae")))))
+  (mapc (lambda (email)
+          (destructuring-bind (&optional name domain) (uiop:split-string email :separator "@")
+            (if (equal domain "users.noreply.github.com")
+                (destructuring-bind (garbage &optional user)
+                    (uiop:split-string name :separator "+")
+                  (setf (gethash (or user garbage) fashy-github-usernames) t))
+                (setf (gethash email fashy-emails) t))))
+        (inferior-shell:run/lines `(progn
+                                     (cd ,fashy-repo-path)
+                                     (git log "--format=%ae")))))
 (print-progress "Merge pull request #42 from fashy/xddd"
-  (mapcar (lambda (message)
-            (let ((message (uiop:split-string message)))
-              (when (equal (car message) "Merge")
-                (destructuring-bind (user &rest branch)
-                    (uiop:split-string (car (last message)) :separator "/")
-                  (when branch
-                    (setf (gethash user fashy-github-usernames) t))))))
-          (inferior-shell:run/lines `(progn
-                                       (cd ,fashy-repo-path)
-                                       (git log "--format=%s")))))
+  (mapc (lambda (message)
+          (let ((message (uiop:split-string message)))
+            (when (equal (car message) "Merge")
+              (destructuring-bind (user &rest branch)
+                  (uiop:split-string (car (last message)) :separator "/")
+                (when branch
+                  (setf (gethash user fashy-github-usernames) t))))))
+        (inferior-shell:run/lines `(progn
+                                     (cd ,fashy-repo-path)
+                                     (git log "--format=%s")))))
+(print-progress "Manual input"
+  (manual-fashy "travisbrown" "travisrobertbrown@gmail.com"))
 (defun write-hash-table (hash-table file)
   (with-open-file (output file :direction :output
-                               :if-exists :overwrite
+                               :if-exists :supersede
                                :if-does-not-exist :create)
     (let (list)
       (maphash (lambda (k v) (when v (push k list))) hash-table)
